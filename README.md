@@ -19,26 +19,24 @@ import { observe } from 'leaping-bunny';
 import SUT from './view-model.js';
 
 const inputMap = {
-  C: { type: 'click' }, // Map "C" to a DOM "ClickEvent"
+  C: { type: 'click' }, // Map "C" to a DOM "ClickEvent", which will be fed into the view-model
 };
 
 const outputMap = {
 };
 
-describe('Click Counter', () => {
-    
+describe('Click Counter', () => {   
   describe('When the button is clicked', () => {
  
     observe.it('Emits the count of clicks', {
-			SUT,
-			inputMap,
-			outputMap,
-			input:        '---C---C--CC---C---', // Actions
-			output:       '---1---2--34---5---', // Expectations
+	  SUT,
+	  inputMap,
+	  outputMap,
+	  input:        '---C---C--CC---C---', // Actions
+	  output:       '---1---2--34---5---', // Expectations
     });
 
   });
-
 });
 
 ```
