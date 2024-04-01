@@ -1,6 +1,6 @@
 {
   "name": "leaping-bunny",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "A JavaScript testing library for async Rimmel components and view-models. No animals have been killed for this project.",
   "main": "dist/index.js",
   "module": "dist/index.js",
