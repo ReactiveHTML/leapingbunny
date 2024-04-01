@@ -46,5 +46,8 @@
   "dependencies": {
     "@types/jest": "^29.5.12",
     "rxjs-marbles": "^7.0.1"
+  },
+  "devDependencies": {
+    "bun-plugin-dts": "^0.2.1"
   }
 }

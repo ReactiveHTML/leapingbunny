@@ -6,7 +6,11 @@ bun build \
     --outfile=dist/index.js \
     --target node \
     --sourcemap=external \
-    --external '*' \
+    --external 'rxjs-marbles' \
     --minify \
-    --watch
+    --watch \
+#    &
 
+# tsc --watch --emitDeclarationOnly --project tsconfig.json
+
+wait
