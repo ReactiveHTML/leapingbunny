@@ -2,30 +2,40 @@
   "name": "leaping-bunny",
   "version": "0.0.1",
   "description": "A JavaScript testing library for async Rimmel components and view-models. No animals have been killed for this project.",
-  "main": "index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "browser": {
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "type": "module",
   "scripts": {
+    "build": "./build.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "javascript",
     "typescript",
     "testing",
-    "unit",
-    "testing",
-    "component",
-    "testing",
-    "shallow",
-    "testing",
+    "unit-testing",
+    "component-testing",
+    "shallow-testing",
     "qa",
+    "rml",
+    "rimmel",
     "rimmel.js",
     "observables",
+    "marbles",
     "marbles.js",
     "rx-marbles",
     "rxjs",
     "functional-reactive",
-    "programming",
-    "functional",
-    "programming"
+    "functional"
   ],
   "author": "Me",
   "license": "MIT",
