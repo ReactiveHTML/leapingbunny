@@ -33,8 +33,8 @@ describe('Click Counter', () => {
 			SUT,
 			inputMap,
 			outputMap,
-			input:        '---C---C--CC---C----(o|)', // Actions
-			output:       '---1---2--34---5----(W|)', // Expectations
+			input:        '---C---C--CC---C---', // Actions
+			output:       '---1---2--34---5---', // Expectations
     });
 
   });
