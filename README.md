@@ -43,5 +43,5 @@ describe('Click Counter', () => {
 
 ```
 
-# Testing shallow-mounted components
+## Testing shallow-mounted components
 WIP.
