@@ -28,12 +28,12 @@ const mappings = {
   }
 };
 
-describe('Click Counter', () => {   
+describe('Click Counter', () => {
   describe('When the button is clicked', () => {
- 
+
     observe.it('Emit a count of clicks', viewModel, mappings, {
-  	  input:  '---C---C--CC---C---', // Actions (C = button is clicked)
-	    output: '---1---2--34---5---', // Expectations (1, 2, 3 is the output emitted each time)
+      input:  '---C---C--CC---C---', // Actions (C = button is clicked)
+      output: '---1---2--34---5---', // Expectations (1, 2, 3 is the output emitted each time)
     });
 
   });
@@ -73,11 +73,11 @@ const mappings = {
   }
 };
 
-describe('Alternate clicks', () => {   
+describe('Alternate clicks', () => {
   describe('When the buttons are clicked alternatively', () => {
- 
+
     observe.it('Emit a "You win" message', viewModel, mappings, {
-  	  inputs: {
+      inputs: {
         input1: '---C---C--C-C---C------', // Actions (C = button is clicked)
         input2: '-----C---C--C--C---C---', // Actions (C = button is clicked)
       },
@@ -88,14 +88,13 @@ describe('Alternate clicks', () => {
 
   });
 });
-
 ```
 
 In the test above we're making sure that when `input1` and `input2` receive exacly 5 clicks, alternatively, then `output1` emits "You win".
 Want to test if you start with the second button instead? Trivial.
 ```js
     observe.it('Second button first, then emit a "You win" message', viewModel, mappings, {
-  	  inputs: {
+      inputs: {
         input1: '-----C---C--C-C----C-', // Actions (C = button is clicked)
         input2: '-C-----C--C--C---C---', // Actions (C = button is clicked)
       },
@@ -108,7 +107,7 @@ Want to test if you start with the second button instead? Trivial.
 So, what about other cases, when the alternative sequence is not respected?
 ```js
     observe.it('Second button first, then emit a "You win" message', viewModel, mappings, {
-  	  inputs: {
+      inputs: {
         input1: '--C--C------C-C----C-', // Actions (C = button is clicked)
         input2: '-C-----CCCC--C---C---', // Actions (C = button is clicked)
       },
