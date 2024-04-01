@@ -2,14 +2,14 @@
   "name": "leaping-bunny",
   "version": "0.0.3",
   "description": "A JavaScript testing library for async Rimmel components and view-models. No animals have been killed for this project.",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "_require": "./dist/index.cjs",
       "browser": {
-        "default": "./dist/index.mjs"
+        "default": "./dist/index.js"
       }
     }
   },
