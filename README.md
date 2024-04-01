@@ -74,11 +74,11 @@ const mappings = {
 };
 
 describe('Alternate clicks', () => {
-  describe('When the buttons are clicked alternatively', () => {
+  describe('When the buttons are clicked 10 times, alternatively', () => {
 
     observe.it('Emit a "You win" message', viewModel, mappings, {
       inputs: {
-        input1: '---C---C--C-C---C------', // Actions (C = button is clicked)
+        input1: '---C---C--C--C---C-----', // Actions (C = button is clicked)
         input2: '-----C---C--C--C---C---', // Actions (C = button is clicked)
       },
       outputs: {
@@ -119,9 +119,3 @@ So, what about other cases, when the alternative sequence is not respected?
 
 In this case, we expect `output1` to notify as soon as the first wrong button is clicked.
 
-
-## Testing shallow-mounted components
-WIP
-
-## Testing deep-mounted components
-WIP
