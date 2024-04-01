@@ -37,6 +37,10 @@
     "functional-reactive",
     "functional"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellomenu/leaping-bunny.git"
+  },
   "author": "Me",
   "license": "MIT",
   "dependencies": {
