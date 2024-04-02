@@ -2,7 +2,7 @@
 A zero-animal-cruelty JavaScript testing library for async components, observable states and view-models.
 Based on rx-marbles, it dramatically simplifies setting up unit tests for observable streams.
 
-![Leaping Bunny](./leaping-bunny.png)
+![Leaping Bunny](./images/leaping-bunny.png)
 
 ## Motivation
 People don't like writing tests... unless it's efficient and fun. If it's not fun, the result is awful and clients are unhappy. If it's not efficient but people have fun writing them, it's a business tragedy.
